@@ -9,29 +9,30 @@ This is a simple command-line Library Management System implemented in C. It all
 
 ‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image2.png?raw=true)
 
-<ul>
-  <li>Add a book</li>
-  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image4.png>
-  <li>Display available books</li>
-  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image5.png>
-  <li>Remove a book</li>
-  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image6.png>
-  <li>Issue a book to a student</li>
-  <li>Return a book from a student</li>
-  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image7.png>
-  <li>View issued books list</li>
-</ul>
+- Add a book
+  ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image2.png?raw=true)
+
+- Display available books
+  ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image5.png?raw=true)
+
+- Remove a book
+  ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image6.png?raw=true)
+
+- Issue a book to a student
+
+- Return a book from a student
+  ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image7.png?raw=true)
+
+- View issued books list
 
 ### Student Functions:
 
+![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image3.png?raw=true)
 
-‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image3.png?raw=true)
+- View available books
 
-<ul>
-  <li>View available books</li>
-  <li>Issue a book</li>
-  <li>Return a book</li>
-</ul>
+- Issue a book
 
+- Return a book
 
 
