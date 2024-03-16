@@ -1,7 +1,7 @@
 # Library-Management-System
 This is a simple command-line Library Management System implemented in C. It allows both administrators and students to interact with the library system.
 
-##Features
+## Features
 ### Admin Functions:
 
 <ul>
