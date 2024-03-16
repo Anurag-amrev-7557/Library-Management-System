@@ -4,8 +4,7 @@ This is a simple command-line Library Management System implemented in C. It all
 
 ‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image1.png?raw=true)
 
-## Features
-### Admin Functions:
+## Admin Functions:
 
 ‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image2.png?raw=true)
 
@@ -33,7 +32,7 @@ This is a simple command-line Library Management System implemented in C. It all
  
   ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image9.png?raw=true)
 
-### Student Functions:
+## Student Functions:
 
 ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image3.png?raw=true)
 
