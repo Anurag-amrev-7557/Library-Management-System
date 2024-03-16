@@ -2,7 +2,7 @@
 This is a simple command-line Library Management System implemented in C. It allows both administrators and students to interact with the library system.
 
 Features
-# Admin Functions:
+## Admin Functions:
 
 <ul>
   <li>Add a book</li>
@@ -13,7 +13,7 @@ Features
   <li>View issued books list</li>
 </ul>
 
-# Student Functions:
+## Student Functions:
 
 <ul>
   <li>View available books</li>
