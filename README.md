@@ -20,6 +20,9 @@ This is a simple command-line Library Management System implemented in C. It all
 
 ### Student Functions:
 
+
+‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image3.png?raw=true)
+
 <ul>
   <li>View available books</li>
   <li>Issue a book</li>
