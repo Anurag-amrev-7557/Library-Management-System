@@ -10,6 +10,7 @@ This is a simple command-line Library Management System implemented in C. It all
 ‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image2.png?raw=true)
 
 - Add a book
+- <br>
   ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image4.png?raw=true)
 
 - Display available books
