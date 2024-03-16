@@ -10,18 +10,21 @@ This is a simple command-line Library Management System implemented in C. It all
 ‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image2.png?raw=true)
 
 - Add a book
-- 
+ 
   ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image4.png?raw=true)
 
 - Display available books
+ 
   ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image5.png?raw=true)
 
 - Remove a book
+ 
   ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image6.png?raw=true)
 
 - Issue a book to a student
 
 - Return a book from a student
+ 
   ![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image7.png?raw=true)
 
 - View issued books list
