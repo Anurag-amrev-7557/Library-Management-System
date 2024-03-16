@@ -21,5 +21,5 @@ This is a simple command-line Library Management System implemented in C. It all
   <li>Return a book</li>
 </ul>
 
-‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/Screenshot 2024-03-16 200407.png?raw=true)
-‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/Screenshot 2024-03-16 200502.png?raw=true)
+‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image1.png?raw=true)
+‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image2.png?raw=true)
