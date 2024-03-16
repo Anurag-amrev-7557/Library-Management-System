@@ -11,10 +11,14 @@ This is a simple command-line Library Management System implemented in C. It all
 
 <ul>
   <li>Add a book</li>
+  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image4.png?raw=true>
   <li>Display available books</li>
+  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image5.png?raw=true>
   <li>Remove a book</li>
+  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image6.png?raw=true>
   <li>Issue a book to a student</li>
   <li>Return a book from a student</li>
+  <img src=‎https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image7.png?raw=true>
   <li>View issued books list</li>
 </ul>
 
