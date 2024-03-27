@@ -137,11 +137,22 @@ void addBook() {
     sprintf(myDate, "%02d/%02d/%d", tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
     strcpy(b.date, myDate);
 
+    // Read the existing books to determine the next book ID
     int nextBookId = 1;
+    FILE *fpExistingBooks = fopen("books.txt", "rb");
+    if (fpExistingBooks != NULL) {
+        struct books temp;
+        while (fread(&temp, sizeof(temp), 1, fpExistingBooks) == 1) {
+            if (temp.id >= nextBookId) {
+                nextBookId = temp.id + 1;
+            }
+        }
+        fclose(fpExistingBooks);
+    }
 
     fp = fopen("books.txt", "ab");
 
-    b.id = nextBookId++;
+    b.id = nextBookId;
 
     printf("\n\n\n\t\t\t\t\t\t\t\t                            \033[1;33;47m<== \033[1;32mAdd Books \033[1;33;47m==>\n");
     printStyledMenu("\t\t-----------------------------------------");
@@ -156,7 +167,7 @@ void addBook() {
     fgets(b.authorName, sizeof(b.authorName), stdin);
     b.authorName[strcspn(b.authorName, "\n")] = '\0';
 
-    printf("\n\t\t\t\t\t\t\t\t\t                \033[1;33m<-- \033[1;32mBook Added Successfully \033[1;33m-->\n");
+    printf("\n\t\t\t\t\t\t\t\t\t             \033[1;33m<-- \033[1;32mBook Added Successfully \033[1;33m-->\n");
 
     fwrite(&b, sizeof(b), 1, fp);
     fclose(fp);
@@ -250,7 +261,7 @@ void del() {
     printStyledMenu("\t\t  -------------------------------");
     printStyledMenuOption(1, "Search by ID");
     printStyledMenuOption(2, "Search by Name");
-    printStyledMenuOption(0, "Exit");
+    printStyledMenuOption(0, "Main Menu");
     printStyledMenu("\t\t  -------------------------------");
     printf("\t\t\t\t\t\t\t\t\t            Enter your choice: ");
     int choice;
