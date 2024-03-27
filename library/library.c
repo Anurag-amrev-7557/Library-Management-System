@@ -100,7 +100,7 @@ void headMessage() {
     printStyledMenu("#############                                                  ############");
     printStyledMenu("###########################################################################");
     printStyledMenu("\033[1;36m---------------------------------------------------------------------------");
-    printStyledMenu("\t\t\t \033[1;30mMade with love by Anurag");
+    printStyledMenu("    \033[1;30mMade by Anurag, Atharv, Yash Jeswani, Chandan, Ayush and Yash Singh");
     printStyledMenu("\033[1;36m---------------------------------------------------------------------------\n\n");
     printStyledMenu("\033[1;30mPress Enter to continue.....\n\n");
     getchar();
@@ -156,7 +156,7 @@ void addBook() {
     fgets(b.authorName, sizeof(b.authorName), stdin);
     b.authorName[strcspn(b.authorName, "\n")] = '\0';
 
-    printf("\n\t\t\t\t\t\t\t\t\t              \033[1;33m<-- \033[1;32mBook Added Successfully \033[1;33m-->\n");
+    printf("\n\t\t\t\t\t\t\t\t\t                \033[1;33m<-- \033[1;32mBook Added Successfully \033[1;33m-->\n");
 
     fwrite(&b, sizeof(b), 1, fp);
     fclose(fp);
@@ -165,7 +165,7 @@ void addBook() {
 void booksList() {
     system("cls");
     printf("\n\t\t\t\t\t\t\t\t                   \033[1;33;47m<== \033[1;32;47mAvailable Books \033[1;33;47m==>\n");
-    printf("\t\t\t\t                      \033[1;34;47m----------------------------------------------------------------------------------\n\n");
+    printf("\t\t\t\t                      \033[1;34;47m----------------------------------------------------------------------------------\n");
     printf("\t\t\t\t\t                   %-10s %-30s %-20s %s\n\n", "Book id", "Book Name", "Author", "Date");
 
     fp = fopen("books.txt", "rb");
@@ -195,10 +195,6 @@ void issueBook() {
     clearInputBuffer();
 
     fp = fopen("books.txt", "rb");
-    if (fp == NULL) {
-        printf("\t\t\t\t\t\t\t\t\t                         \033[1;31mError: Unable to open file.\n");
-        return;
-    }
 
     while (fread(&b, sizeof(b), 1, fp) == 1) {
         if (b.id == bookId) {
@@ -215,10 +211,6 @@ void issueBook() {
     }
 
     FILE *issueFile = fopen("issue.txt", "ab+");
-    if (issueFile == NULL) {
-        printf("\033[1;31mError: Unable to open issue file.\n");
-        return;
-    }
 
     fseek(issueFile, 0, SEEK_SET);
     while (fread(&s, sizeof(s), 1, issueFile) == 1) {
@@ -284,17 +276,8 @@ void del() {
     FILE *ft;
 
     fp = fopen("books.txt", "rb");
-    if (fp == NULL) {
-        printf("Error: Unable to open file.\n");
-        return;
-    }
 
     ft = fopen("temp.txt", "wb");
-    if (ft == NULL) {
-        printf("Error: Unable to create temporary file.\n");
-        fclose(fp);
-        return;
-    }
 
     while (fread(&b, sizeof(b), 1, fp) == 1) {
         if ((choice == 1 && id != b.id) || (choice == 2 && strcmp(name, b.bookName) != 0)) {
@@ -327,22 +310,13 @@ void returnBook() {
     clearInputBuffer();
 
     FILE *issueFile = fopen("issue.txt", "rb");
-    if (issueFile == NULL) {
-        printf("\t\t\t\t\t\t\t\t                      Error: Unable to open issue file.\n");
-        return;
-    }
 
     FILE *tempFile = fopen("temp.txt", "wb");
-    if (tempFile == NULL) {
-        printf("\t\t\t\t\t\t\t\t                     Error: Unable to create temporary file.\n");
-        fclose(issueFile);
-        return;
-    }
 
     while (fread(&s, sizeof(s), 1, issueFile) == 1) {
         if (s.id == id) {
             found = 1;
-            printf("\n\n\t\t\t\t\t\t\t\t                   \033[1;32mBook '%s' returned by student '%s'\n", s.bookName, s.sName);
+            printf("\n\n\t\t\t\t\t\t\t\t           \033[1;32mBook '%s' returned by student '%s'\n", s.bookName, s.sName);
         } else {
             fwrite(&s, sizeof(s), 1, tempFile);
         }
@@ -355,7 +329,7 @@ void returnBook() {
     rename("temp.txt", "issue.txt");
 
     if (!found) {
-        printf("\n\t\t\t\t\t\t\t\t                    \033[1;31mBook with ID %d is not issued.\n", id);
+        printf("\n\t\t\t\t\t\t\t\t                      \033[1;31mBook with ID %d is not issued.\n", id);
     }
 }
 
@@ -366,10 +340,6 @@ void issueList() {
     printf("\n\t\t\t\t                   \033[1;30m%-10s %-20s %-20s %-20s %-30s %s\n", "S.id", "Name", "Branch", "Roll", "Book Name", "Date");
 
     FILE *issueFile = fopen("issue.txt", "rb");
-    if (issueFile == NULL) {
-        printf("\t\t\t\t\t\t\t\t                      \033[1;31mError: Unable to open file.\n");
-        return;
-    }
 
     while (fread(&s, sizeof(s), 1, issueFile) == 1) {
         printf("\n\t\t\t\t                   \033[1;30m%-10d %-20s %-20s %-20s %-30s %s\n", s.id, s.sName, s.sBranch, s.sRoll, s.bookName, s.date);
