@@ -1,6 +1,5 @@
 # Library-Management-System
 This is a simple command-line Library Management System implemented in C. It allows both administrators and students to interact with the library system.
-It is also very fast and efficient.
 
 
 ‎![Demo](https://github.com/Anurag-amrev-7557/Library-Management-System/blob/main/resources/image1.png?raw=true)
